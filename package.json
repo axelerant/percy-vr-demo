@@ -6,15 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "percy": "percy exec -- cypress run",
+    "server_percy": "start-server-and-test dev http://localhost:3000 percy"
   },
   "dependencies": {
+    "@percy/cli": "^1.1.0",
+    "@percy/cypress": "^3.1.1",
+    "cypress": "^9.6.0",
     "next": "12.1.5",
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },
   "devDependencies": {
     "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5"
+    "eslint-config-next": "12.1.5",
+    "start-server-and-test": "^1.14.0"
   }
 }
