@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "percy": "percy exec -- cypress run"
+    "percy": "percy exec -- cypress run",
+    "server_percy": "start-server-and-test dev http://localhost:3000 percy"
   },
   "dependencies": {
     "@percy/cli": "^1.1.0",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5"
+    "eslint-config-next": "12.1.5",
+    "start-server-and-test": "^1.14.0"
   }
 }
