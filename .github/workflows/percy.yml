@@ -16,6 +16,6 @@ jobs:
       - name: Run Percy
         run: |
           yarn
-          yarn percy
+          yarn server_percy
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
